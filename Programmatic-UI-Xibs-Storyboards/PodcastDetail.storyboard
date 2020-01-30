@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Podcast Detail Controller-->
+        <scene sceneID="yxM-Ts-aew">
+            <objects>
+                <viewController storyboardIdentifier="PodcastDetail" id="LOI-qR-8r5" customClass="PodcastDetailController" customModule="Programmatic_UI_Xibs_Storyboards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nrS-IA-q92">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mic" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="jHc-Bl-7b1">
+                                <rect key="frame" x="0.0" y="43.5" width="414" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="N8p-iI-Og4"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yT-Ge-RvL">
+                                <rect key="frame" x="20" y="544" width="374" height="36"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.75745105300000004" green="0.60697580399999995" blue="0.84267407660000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6yT-Ge-RvL" firstAttribute="leading" secondItem="jEw-1W-LVC" secondAttribute="leading" constant="20" id="9bq-D6-iDh"/>
+                            <constraint firstItem="jEw-1W-LVC" firstAttribute="trailing" secondItem="6yT-Ge-RvL" secondAttribute="trailing" constant="20" id="A6D-BJ-bPC"/>
+                            <constraint firstItem="jEw-1W-LVC" firstAttribute="trailing" secondItem="jHc-Bl-7b1" secondAttribute="trailing" id="KIl-PW-dDz"/>
+                            <constraint firstItem="6yT-Ge-RvL" firstAttribute="top" secondItem="jHc-Bl-7b1" secondAttribute="bottom" constant="100" id="XEA-j2-EHJ"/>
+                            <constraint firstItem="jHc-Bl-7b1" firstAttribute="leading" secondItem="jEw-1W-LVC" secondAttribute="leading" id="cpY-kF-bym"/>
+                            <constraint firstItem="jHc-Bl-7b1" firstAttribute="top" secondItem="jEw-1W-LVC" secondAttribute="top" id="qXo-II-2IX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jEw-1W-LVC"/>
+                    </view>
+                    <connections>
+                        <outlet property="artistNameLabel" destination="6yT-Ge-RvL" id="7gZ-oR-mFS"/>
+                        <outlet property="podcastImageView" destination="jHc-Bl-7b1" id="gAs-N5-uFV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tmn-UU-jHh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-36.231884057971016" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mic" catalog="system" width="54" height="64"/>
+    </resources>
+</document>
